@@ -2,9 +2,9 @@
   color: #eeeeee;
   cursor: none;
 }
-  
+
 html {
-  background: linear-gradient(60deg,#222831, #31363f );
+  background: linear-gradient(60deg, #222831, #31363f);
   height: 100%;
   padding-left: 5%;
 
@@ -15,11 +15,12 @@ html {
 }
 
 .kursor {
-  background-color: transparent; /* Убирает фон у курсора */
+  background-color: transparent;
+  /* Убирает фон у курсора */
 }
 
 h1 {
-  font-family: nunito;
+  font-family: Prompt;
   font-weight: 800;
   font-style: italic;
   text-transform: uppercase;
@@ -30,7 +31,8 @@ h1 {
 /* #region suse */
 @font-face {
   font-family: Suse;
-  src: url('./fonts/suse/SUSE-Regular.ttf') format('truetype'); /* Убедитесь, что файл существует */
+  src: url('./fonts/suse/SUSE-Regular.ttf') format('truetype');
+  /* Убедитесь, что файл существует */
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -67,75 +69,119 @@ h1 {
   font-style: normal;
   font-display: swap;
 }
+
 /* #endregion */
+// #region nunito
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-Italic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 @font-face {
   font-family: nunito;
   src: url('./fonts/nunito/Nunito-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
-  font-display: swap;;
+  font-display: swap;
+  ;
 }
+
 /* #endregion */
+// #region prompt
+@font-face {
+  font-family: Prompt;
+  src: url('./fonts/prompt/Prompt-MediumItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: Prompt;
+  src: url('./fonts/prompt/Prompt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Prompt;
+  src: url('./fonts/prompt/Prompt-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
