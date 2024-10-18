@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "./static/css/main.41e7c558.css",
-    "main.js": "./static/js/main.16e8158c.js",
+    "main.css": "./static/css/main.f901ff89.css",
+    "main.js": "./static/js/main.505f2f91.js",
     "reactPlayerYouTube.js": "./static/js/reactPlayerYouTube.1ea34014.chunk.js",
     "reactPlayerSoundCloud.js": "./static/js/reactPlayerSoundCloud.3df0e607.chunk.js",
     "reactPlayerVimeo.js": "./static/js/reactPlayerVimeo.6f023723.chunk.js",
@@ -36,6 +36,9 @@
     "static/media/met.png": "./static/media/met.a30aab12510e9d21f32b.png",
     "static/media/MnC.png": "./static/media/MnC.7f09140dc5992f38df90.png",
     "static/media/kickstarter.png": "./static/media/kickstarter.d27ff011b3d6bdc3458c.png",
+    "static/media/Prompt-MediumItalic.ttf": "./static/media/Prompt-MediumItalic.3ded69f392fdc236e99c.ttf",
+    "static/media/Prompt-SemiBold.ttf": "./static/media/Prompt-SemiBold.a283df5464c25fe8e59a.ttf",
+    "static/media/Prompt-Regular.ttf": "./static/media/Prompt-Regular.a8979f5fddba897421a7.ttf",
     "static/media/Nunito-MediumItalic.ttf": "./static/media/Nunito-MediumItalic.3241228fab2414cc8e11.ttf",
     "static/media/Nunito-Italic.ttf": "./static/media/Nunito-Italic.cedc8a593d8ba361dcf4.ttf",
     "static/media/Nunito-ExtraBoldItalic.ttf": "./static/media/Nunito-ExtraBoldItalic.fa54ce9456f46eca2b6d.ttf",
@@ -53,8 +56,8 @@
     "static/media/SUSE-ExtraBold.ttf": "./static/media/SUSE-ExtraBold.d352a372b7ba395fe544.ttf",
     "static/media/2048.png": "./static/media/2048.bcd54d1971a7aaf04e65.png",
     "index.html": "./index.html",
-    "main.41e7c558.css.map": "./static/css/main.41e7c558.css.map",
-    "main.16e8158c.js.map": "./static/js/main.16e8158c.js.map",
+    "main.f901ff89.css.map": "./static/css/main.f901ff89.css.map",
+    "main.505f2f91.js.map": "./static/js/main.505f2f91.js.map",
     "reactPlayerYouTube.1ea34014.chunk.js.map": "./static/js/reactPlayerYouTube.1ea34014.chunk.js.map",
     "reactPlayerSoundCloud.3df0e607.chunk.js.map": "./static/js/reactPlayerSoundCloud.3df0e607.chunk.js.map",
     "reactPlayerVimeo.6f023723.chunk.js.map": "./static/js/reactPlayerVimeo.6f023723.chunk.js.map",
@@ -72,7 +75,7 @@
     "453.ace21015.chunk.js.map": "./static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.41e7c558.css",
-    "static/js/main.16e8158c.js"
+    "static/css/main.f901ff89.css",
+    "static/js/main.505f2f91.js"
   ]
 }
