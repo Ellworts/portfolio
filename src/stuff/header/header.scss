@@ -4,27 +4,66 @@ header {
   left: 0;
   position: fixed;
   width: 100%;
-  height: 30px;
+  height: 60px;
   z-index: 999;
   background: #222831;
   border-bottom: 1px solid #31363F;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 10px;
+
+  @media (max-width: 768px) {
+    height: 45px;
+  }
 }
 
 .header-container {
   display: flex;
   align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: 768px) {
+    justify-content: space-between;
+  }
 }
 
 #header-list {
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 100px;
+  padding-left: 8.5%;
   margin: 0;
+  flex-grow: 1;
+  transition: all 0.3s ease;
+
+  @media (max-width: 768px) {
+    position: absolute;
+    padding: 0;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: #222831;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: height 0.3s ease, opacity 0.3s ease;
+  }
+
+  &.open {
+    @media (max-width: 768px) {
+      height: 200px;
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
 }
 
 .header-buttons {
@@ -37,17 +76,53 @@ header {
   text-decoration: none;
   overflow: hidden;
   transition: 0.3s;
+
+  &:hover {
+    text-shadow: 0 -1.2em #000, 0 0 #76ABAE;
+  }
 }
 
-.header-buttons:hover {
-  text-shadow: 0 -1.2em #000, 0 0 #76ABAE;
+.profile-pic-link {
+  margin-left: auto;
 }
 
 .profile-pic {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-right: 15px;
-  position: absolute;
-  left: 20px;
+  margin-right: 40px;
+
+  @media (max-width: 768px) {
+    margin-right: 20px;
+  }
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.burger-bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.burger-bar.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-bar.open:nth-child(2) {
+  opacity: 0;
+}
+
+.burger-bar.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }

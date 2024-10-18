@@ -1,7 +1,6 @@
-import React from 'react'; // Импортируем React
-import './title.scss'; // Импортируем стили
+import React from 'react';
+import './title.scss';
 
-// Импортируем изображения
 import cardImage1 from '../../media/projects/kickstarter.png';
 import cardImage2 from '../../media/projects/met.png';
 import cardImage3 from '../../media/projects/2048.png';
@@ -11,6 +10,9 @@ import cardImage5 from '../../media/projects/rizni-rivni.png';
 function TitleBG() {
   return (
     <div className="sky-container">
+      <span className="star"></span>
+      <span className="star"></span>
+      <span className="star"></span>
       <span className="star"></span>
       <span className="star"></span>
       <span className="star"></span>
@@ -33,7 +35,12 @@ const cardData = [
 function Title() {
   return (
     <div className="title">
-      <h1 className='welcome'>Welcome to my&nbsp; <span className="creative">creative</span>&nbsp;<span className="space">space!</span></h1>
+      <h1 className='welcome'>
+        <div className="welcome-text">Welcome</div>
+        <div className="space-text">
+          to my <span className="creative">creative</span> <span className="space">space!</span>
+        </div>
+      </h1>
       <TitleBG />
       <div className="card-list">
         {cardData.map((card) => (

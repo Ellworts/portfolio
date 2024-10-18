@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect } from 'react';
 import Kursor from 'kursor';
 import AudioPlayer from "./stuff/audio/AudioPlayer";
@@ -6,12 +7,17 @@ import Title from "./stuff/title-section/title";
 
 const CustomCursor = () => {
   useEffect(() => {
-    // eslint-disable-next-line no-unused-vars
-    const kursor = new Kursor({
-      type: 3,
-      removeDefaultCursor: true, 
-      color: '#76ABAE',
-    });
+    const isTouchDevice = () => {
+      return window.matchMedia("(pointer: coarse)").matches || 'ontouchstart' in window;
+    };
+
+    if (!isTouchDevice()) {
+      const kursor = new Kursor({
+        type: 3,
+        removeDefaultCursor: true, 
+        color: '#76ABAE',
+      });
+    }
 
   }, []);
 

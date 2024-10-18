@@ -2,11 +2,16 @@
   color: #eeeeee;
   cursor: none;
 }
-
+  
 html {
   background: linear-gradient(60deg,#222831, #31363f );
-  height: 100vh;
+  height: 100%;
   padding-left: 5%;
+
+  @media (max-width: 768px) {
+    height: auto;
+    padding-left: 0;
+  }
 }
 
 .kursor {

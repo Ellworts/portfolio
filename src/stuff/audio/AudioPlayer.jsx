@@ -1,8 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import ReactPlayer from 'react-player';
 import './AudioPlayer.scss';
-
-// #region tracklist
 import track1 from './tracklist/track1.mp3';
 import track2 from './tracklist/track2.mp3';
 import track3 from './tracklist/track3.mp3';
@@ -18,17 +16,33 @@ import track12 from './tracklist/track12.mp3';
 import track13 from './tracklist/track13.mp3';
 import track14 from './tracklist/track14.mp3';
 import track15 from './tracklist/track15.mp3';
-// #endregion
 
 const AudioPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(true);
-  const [volume, setVolume] = useState(0.65);
+  const [volume, setVolume] = useState(0.55);
   const playerRef = useRef(null);
 
-  const tracks = [track1, track2, track3, track4, track5, track6, track7, track8, track9, track10, track11, track12, track13, track14, track15];
+  const tracks = [
+    track1,
+    track2,
+    track3,
+    track4,
+    track5,
+    track6,
+    track7,
+    track8,
+    track9,
+    track10,
+    track11,
+    track12,
+    track13,
+    track14,
+    track15
+  ];
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
 
   useEffect(() => {
+
     const getRandomTrackIndex = () => {
       const randomIndex = Math.floor(Math.random() * tracks.length);
       setCurrentTrackIndex(randomIndex);
@@ -46,6 +60,10 @@ const AudioPlayer = () => {
     setVolume(newVolume);
   };
 
+  const handleNextTrack = () => {
+    setCurrentTrackIndex((prevIndex) => (prevIndex + 1) % tracks.length);
+  };
+
   return (
     <div className="audio-player">
       <ReactPlayer
@@ -57,6 +75,7 @@ const AudioPlayer = () => {
         width="100%"
         height="50px"
         style={{ display: 'none' }}
+        onEnded={handleNextTrack}
       />
       <button
         onClick={togglePlayPause}
@@ -74,6 +93,14 @@ const AudioPlayer = () => {
             </g>
           </svg>
         )}
+      </button>
+      <button onClick={handleNextTrack} className="next-track">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 21 21">
+          <g fill="none" fillRule="evenodd" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" transform="translate(2 2)">
+            <circle cx="8.5" cy="8.5" r="8"></circle>
+            <path d="m7.5 11.5l3-3l-3.068-3"></path>
+          </g>
+        </svg>
       </button>
       <input
         type="range"
