@@ -1,5 +1,1 @@
-- палетка: 
-#222831
-#31363F
-#76ABAE
-#EEEEEE
+- [web](https://ellworts.github.io/portfolio/)
