@@ -30,8 +30,7 @@ header {
 }
 
 #header-list {
-  border-top: 1px solid #31363F ;
-  border-bottom: 1px solid #31363F ;
+
   list-style: none;
   display: flex;
   justify-content: center;
@@ -44,6 +43,8 @@ header {
 
   @media (max-width: 768px) {
     position: absolute;
+    border-top: 1px solid #31363F ;
+    border-bottom: 1px solid #31363F ;
     padding: 0;
     top: 60px;
     left: 0;
