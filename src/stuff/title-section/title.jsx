@@ -27,9 +27,9 @@ function TitleBG() {
 const cardData = [
   { id: 1, title: 'Kickstarter', imageUrl: cardImage1, link: 'https://ellworts.github.io/kickstarter/' },
   { id: 2, title: 'MET Museum', imageUrl: cardImage2, link: 'https://ellworts.github.io/landing-page/' },
+  { id: 5, title: 'Rizni-Rivni', imageUrl: cardImage5, link: 'https://ellworts.github.io/riznirivni/' },
   { id: 3, title: '2048 Web Game', imageUrl: cardImage3, link: 'https://ellworts.github.io/2048/' },
   { id: 4, title: 'M&C Steakhouse', imageUrl: cardImage4, link: 'https://ellworts.github.io/mnc-page/' },
-  { id: 5, title: 'Rizni-Rivni (coming soon)', imageUrl: cardImage5 },
 ];
 
 function Title() {

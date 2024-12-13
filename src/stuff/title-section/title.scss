@@ -66,6 +66,7 @@
 
 .title {
   margin-top: 100px;
+  margin-bottom: 50px;
 
   @media (max-width: 768px) {
     margin-top: 77px;
@@ -73,6 +74,7 @@
 }
 
 .welcome {
+  font-style: normal;
   font-weight: normal;
   display: flex;
   flex-direction: column;
@@ -95,7 +97,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 40px;
   max-width: 1200px;
-  margin: 2% auto;
+  margin: 1% auto;
 
   @media (max-width: 768px) {
     max-width: 325px;
